@@ -1,11 +1,11 @@
 ﻿namespace DecoratorPattern;
 
-public class AddonMilk : Beverage
+public class Milk : AddonDecorator
 {
     private readonly Beverage _beverage;
     private const int BasePrice = 2;
 
-    public AddonMilk(Beverage beverage)
+    public Milk(Beverage beverage)
     {
         this._beverage = beverage;
     }

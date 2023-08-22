@@ -9,8 +9,8 @@ internal class Program
         Console.WriteLine("Testing");
 
         Espresso espresso = new Espresso();
-        AddonMilk addonMilk = new AddonMilk(espresso);
+        Milk milk = new Milk(espresso);
 
-        Console.WriteLine(addonMilk.GetCost());
+        Console.WriteLine(milk.GetCost());
     }
 }
