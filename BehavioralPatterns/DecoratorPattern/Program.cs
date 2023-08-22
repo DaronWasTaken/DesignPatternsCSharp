@@ -8,9 +8,8 @@ internal class Program
     {
         Console.WriteLine("Testing");
 
-        Espresso espresso = new Espresso();
-        Milk milk = new Milk(espresso);
+        Beverage beverage = new Milk(new Espresso());
 
-        Console.WriteLine(milk.GetCost());
+        Console.WriteLine(beverage.GetCost());
     }
 }
